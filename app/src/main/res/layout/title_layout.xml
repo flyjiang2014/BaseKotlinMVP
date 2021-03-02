@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_app">
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/title_height"
+        android:layout_alignParentLeft="true">
+
+        <RelativeLayout
+            android:id="@+id/title_layout_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:id="@+id/title_layout_left_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrow_left" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/title_layout_left_image"
+                android:gravity="center"
+                android:text=""
+                android:visibility="gone" />
+        </RelativeLayout>
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+    <RelativeLayout
+        android:id="@+id/title_layout_middle"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/title_height"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/title_layout_middle_tv"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/grey_dim"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/title_height"
+        android:layout_alignParentRight="true">
+
+        <RelativeLayout
+            android:id="@+id/title_layout_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/title_layout_right_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/title_layout_right_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/title_layout_right_image"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/grey_dim"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </com.balysv.materialripple.MaterialRippleLayout>
+</RelativeLayout>
